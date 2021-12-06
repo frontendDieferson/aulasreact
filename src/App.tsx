@@ -55,7 +55,7 @@ const App = () => {
       Olá {name} {lastName}, tudo bem?<br/>
       Você tem {age} anos.
 
-      <h2>Lista de Nomes</h2>
+      <h2>Lista de Nomes (Render Items)</h2>
         <ul>
           {list.map((item, index)=>(
            <List key={index} data={item} />
