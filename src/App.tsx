@@ -27,7 +27,11 @@ const App = () => {
    
   ]
  
+  const [show, setShow] = useState(false)
 
+  const handleClick = () => {
+    setShow(true)
+  }
 
   return (
     <div className="App">
@@ -57,7 +61,14 @@ const App = () => {
            <List key={index} data={item} />
           ))}
         </ul>
-      
+      <div>
+
+        <button onClick={handleClick}>Mostrar</button>
+        {show === true &&
+          <div>Frase do Dia</div>
+
+        }
+      </div>
     </div>
   );
 }
