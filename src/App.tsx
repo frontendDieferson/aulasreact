@@ -30,7 +30,8 @@ const App = () => {
   const [show, setShow] = useState(false)
 
   const handleClick = () => {
-    setShow(true)
+    setShow( !show)
+    
   }
 
   return (
@@ -63,8 +64,8 @@ const App = () => {
         </ul>
       <div>
 
-        <button onClick={handleClick}>Mostrar</button>
-        {show === true &&
+        <button onClick={handleClick}>{show ? 'Ocultar' : 'Mostrar'}</button>
+        {show &&
           <div>Frase do Dia</div>
 
         }
