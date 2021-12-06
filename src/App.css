@@ -1,5 +1,18 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  font-size: 20px;
+  color: aliceblue;
+  padding: 20px;
+  
+  height: auto;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  
+
+ 
+
 }
 
 .App-logo {
@@ -35,4 +48,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+label {
+ margin: 5px;
+  margin-top: 50px;
+  display: grid;
+  width: 600px;
+
+}
+.labelInput {
+  height: 30px;
+  text-align: center;
 }
